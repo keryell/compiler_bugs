@@ -1,7 +1,10 @@
 Clang disallow the destructor of a templated class as a friend
+==============================================================
 
-Clang from trunk fails to compile the following code whereas g++ 5.4
-does:
+https://llvm.org/bugs/show_bug.cgi?id=28873
+
+Clang from trunk (4.0.0 r277725) fails to compile the following code
+whereas g++ 5.4 does:
 
 template <typename T>
 class b {
